@@ -3,13 +3,13 @@ django-cached-s3-storage
 
 This package contains a CachedS3BotoStorage to be used with django-compressor and S3.
 
-Code copied from [https://github.com/jezdez/django_compressor/issues/100](https://github.com/jezdez/django_compressor/issues/100).
+Code copied from [https://github.com/jezdez/django_compressor/issues/100]().
 
 Example settings:
 
 ```
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-STATICFILES_STORAGE = 'cached_s3_storage.CachedS3BotoStorage'
+STATICFILES_STORAGE = 'django_cached_s3_storage.CachedS3BotoStorage'
 COMPRESS_STORAGE = STATICFILES_STORAGE
 
 AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
@@ -28,5 +28,3 @@ AWS_HEADERS = {
     'Cache-Control': 'public, max-age=' + str(max_age)
 }
 ```
-
-
