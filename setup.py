@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name='django-cached-s3-storage',
-    version='0.1',
+    version='0.2',
     py_modules=['cached_s3_storage'],
     license='MIT',
     author='Ulysses V',
