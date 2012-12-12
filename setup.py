@@ -11,4 +11,5 @@ setup(
     author_email='uvilela [at] inoa.com.br',
     url='https://github.com/ulyssesv/django-cached-s3-storage',
     description='Django storage backend to be used with S3.',
+    long_description=open('README.rst').read()
 )
