@@ -21,7 +21,7 @@ Example settings:
 
 	from django.utils.http import http_date
 	from time import time
-	max_age = 315360000
+	max_age = 31536000
 	AWS_HEADERS = {
 		'x-amz-acl': 'public-read',
 		'Expires': http_date(time() + max_age),
