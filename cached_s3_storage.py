@@ -56,8 +56,8 @@ class CachedS3BotoStorage(S3BotoStorage):
 
     def save(self, name, content):
         content = ForgivingFile(content)
-        name = super(CachedS3BotoStorage, self).save(name, content)
         self.local_storage._save(name, content)
+        name = super(CachedS3BotoStorage, self).save(name, content)
         return name
 
     def modified_time(self, name):
